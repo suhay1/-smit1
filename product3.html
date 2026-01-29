@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+ 
+<header class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <img height="60" width="60" src="data:image/png;base64,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" alt="">
+      <span class="ml-3 text-xl"></span>
+    </a>
+    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+      <a class="mr-5 hover:text-gray-900">sell on daraz</a>
+      <a class="mr-5 hover:text-gray-900">help and support</a>
+      <a class="mr-5 hover:text-gray-900">log in</a>
+      <a class="mr-5 hover:text-gray-900">sign out</a>
+    </nav>
+    
+
+  </div>
+</header>
+
+
+
+
+<!-- this is footer -->
+
+<footer class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap md:text-left text-center order-first">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SUBSCRIBE</h2>
+        <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+          <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+            <label for="footer-field" class="leading-7 text-sm text-gray-600">Placeholder</label>
+            <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+        </div>
+        <p class="text-gray-500 text-sm mt-2 md:text-left text-center">Bitters chicharrones fanny pack
+          <br class="lg:block hidden">waistcoat green juice
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-100">
+    <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Tailblocks</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2020 Tailblocks —
+        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@knyttneve</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>
